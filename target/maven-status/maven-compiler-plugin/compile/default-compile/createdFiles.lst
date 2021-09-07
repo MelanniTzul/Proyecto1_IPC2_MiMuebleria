@@ -1,4 +1,11 @@
+ObjetosMuebleria\venta.class
+ObjetosMuebleria\compra.class
+ObjetosMuebleria\ensamblarMueble.class
+Servlet\login.class
+ObjetosMuebleria\cliente.class
+ObjetosMuebleria\pieza.class
 controlador\ProductosController.class
 config\Conexion.class
-Servlet\login.class
 ObjetosMuebleria\usuario.class
+ObjetosMuebleria\mueble.class
+ObjetosMuebleria\emsamblePiezas.class

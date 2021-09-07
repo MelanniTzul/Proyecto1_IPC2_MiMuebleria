@@ -1,8 +1,3 @@
-<%-- 
-    Document   : FinancieraAdmin
-    Created on : 4/09/2021, 03:19:57
-    Author     : Melanni Tzul
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -12,6 +7,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>ÁREA FINANCIERA Y ADMINISTRACIÓN</h1>
+        <img src="../imagenes/financiera.jpg" alt=""/>
+        
+        
+        
     </body>
 </html>

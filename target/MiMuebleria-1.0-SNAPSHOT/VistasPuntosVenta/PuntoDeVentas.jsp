@@ -1,17 +1,15 @@
-<%-- 
-    Document   : PuntoDeVentas
-    Created on : 4/09/2021, 03:20:29
-    Author     : Melanni Tzul
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Ventas</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>ÁREA PUNTOS DE VENTAS</h1>
+        <img src="../imagenes/ventas.jpg" alt=""/>
+        
     </body>
 </html>

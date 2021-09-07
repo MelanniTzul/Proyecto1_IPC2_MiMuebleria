@@ -1,3 +1,7 @@
+ 
+CREATE USER 'UsuarioMuebleria'@'localhost' IDENTIFIED BY 'muebleria123';
+GRANT USAGE,INSERT,DELETE,UPDATE,SELECT ON mi_muebleria.* TO 'UsuarioMuebleria'@'localhost';
+
 mysql -u root2 -p
 CREATE DATABASE mi_muebleria;
 USE mi_muebleria;

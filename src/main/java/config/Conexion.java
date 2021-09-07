@@ -1,4 +1,3 @@
-
 package config;
 
 import static java.lang.System.out;
@@ -7,25 +6,34 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
-
-
-/**Realizamos la conexion a la base de datos*/
+/**
+ * Realizamos la conexion a la base de datos
+ */
 public class Conexion {
-    private static final String USER ="root2";
-    private static final String PASSWORD="root12345";
-    private static final String URL_MYSQL="jdbc:mysql://localhost:3306/mi_muebleria";
-    public static Connection conexion(){
+
+    private static final String USER = "UsuarioMuebleria";
+    private static final String PASSWORD = "muebleria123";
+    private static final String URL_MYSQL = "jdbc:mysql://localhost:3306/mi_muebleria";
+    private static Connection conexion;
+
+    public static Connection conexion() {
         Connection connection = null;
-        try{
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(URL_MYSQL, USER, PASSWORD);
-        }catch(ClassNotFoundException | SQLException e){
-            out.println(e.getMessage()+"");  
+            conexion = DriverManager.getConnection(URL_MYSQL, USER, PASSWORD);
+        } catch (ClassNotFoundException | SQLException e) {
+            out.println(e.getMessage() + "");
             JOptionPane.showMessageDialog(null, e);
         }
         return connection;
     }
-}
+
+    //Set de la variable conexion
+    public static Connection getConexion() {
+        return conexion;
+    }
+
    
     
-
+    
+}

@@ -39,7 +39,7 @@ public class login extends HttpServlet {
             String Pass = request.getParameter("pass");
             
 
-            PreparedStatement consulta = (PreparedStatement) Conexion.conexion().prepareStatement("select * FROM USUARIO WHERE Nombre_De_Usuario='" + usuario +  "' AND Password='" + Pass+"'");        
+            PreparedStatement consulta = (PreparedStatement) Conexion.getConexion().prepareStatement("select * FROM USUARIO WHERE Nombre_De_Usuario='" + usuario +  "' AND Password='" + Pass+"'");        
             ResultSet result =consulta.executeQuery();//Ejecutando la consulta y guardando la informacion           
             boolean a=result.next();    
             if (a&&result.getInt(3)==1) {
@@ -47,7 +47,7 @@ public class login extends HttpServlet {
             } else if (a&&result.getString(3).equals("2") && result.getString(4).equals("1")) {
                 response.sendRedirect("VistasPuntosVenta/PuntoDeVentas.jsp");
             } else if (a&&result.getString(3).equals("3") && result.getString(4).equals("1")) {
-                response.sendRedirect("VistasFabrica/FinancieraAdmin.jsp");
+                response.sendRedirect("VistasAreaFinancieraAdmin/FinancieraAdmin.jsp");
             } else {
                 response.sendRedirect("index.jsp");
                 //Mandar a una pagina de erro que no cumple con los condiciones

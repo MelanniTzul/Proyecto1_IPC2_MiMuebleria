@@ -1,10 +1,8 @@
 
 package ObjetosMuebleria;
 
-/**
- *
- * @author Melanni Tzul
- */
+
+
 public class pieza {
     private int Codigo_Pieza;
     private String Tipo;
